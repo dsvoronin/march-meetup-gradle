@@ -1,0 +1,14 @@
+plugins{
+    id("kotlin-jvm-convention")
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    api project(':pureModule2')
+    testCompile "org.mockito:mockito-inline:2.15.0"
+    compile "org.jetbrains.kotlin:kotlin-stdlib:1.4.30"
+    testCompile "junit:junit:4.12"
+}
+
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"

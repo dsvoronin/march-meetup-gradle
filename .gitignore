@@ -1,0 +1,12 @@
+# Project exclude paths
+/.gradle/
+/applicationModule/build/
+/applicationModule/build/intermediates/javac/debug/classes/
+/build-logic/.gradle/
+/build-logic/build/
+/libraryModule1/build/
+/libraryModule1/build/intermediates/javac/debug/classes/
+/libraryModule2/build/
+/libraryModule2/build/intermediates/javac/debug/classes/
+/pureModule/build/
+/pureModule2/build/

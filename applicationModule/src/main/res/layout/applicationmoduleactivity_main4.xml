@@ -1,0 +1,63 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+<variable name="foo4" type="applicationModulepackageKt0.Foo4"/>
+<variable name="foo5" type="applicationModulepackageKt0.Foo5"/>
+<variable name="foo6" type="applicationModulepackageKt0.Foo6"/>
+
+</data>
+            
+    
+    <ScrollView
+            
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <TextView
+        android:id="@+id/applicationmoduleactivity_main4applicationModulestring40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/applicationModulestring4"
+        android:onClick="@{(view) -> foo4.foo9()}"
+/><TextView
+        android:id="@+id/applicationmoduleactivity_main4libraryModule1string41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/libraryModule1string4"
+        android:onClick="@{(view) -> foo5.foo9()}"
+/><TextView
+        android:id="@+id/applicationmoduleactivity_main4libraryModule2string42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/libraryModule2string4"
+        android:onClick="@{(view) -> foo6.foo9()}"
+/>
+            <ImageView
+        android:id="@+id/applicationmoduleactivity_main4applicationmoduleimage40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/applicationmoduleimage4"
+        
+/>
+            <ImageView
+        android:id="@+id/applicationmoduleactivity_main4librarymodule1image41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/librarymodule1image4"
+        
+/>
+            <ImageView
+        android:id="@+id/applicationmoduleactivity_main4librarymodule2image42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/librarymodule2image4"
+        
+/>
+            
+            
+        </LinearLayout>
+    </ScrollView>
+</layout>
+            

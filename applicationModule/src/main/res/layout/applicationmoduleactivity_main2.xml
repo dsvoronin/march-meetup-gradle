@@ -1,0 +1,36 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+<variable name="foo2" type="applicationModulepackageKt0.Foo2"/>
+<variable name="foo9" type="applicationModulepackageKt0.Foo9"/>
+
+</data>
+            
+    
+    <ScrollView
+            
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <TextView
+        android:id="@+id/applicationmoduleactivity_main2applicationModulestring20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/applicationModulestring2"
+        android:onClick="@{(view) -> foo2.foo9()}"
+/>
+            <ImageView
+        android:id="@+id/applicationmoduleactivity_main2applicationmoduleimage20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/applicationmoduleimage2"
+        android:onClick="@{(view) -> foo9.foo9()}"
+/>
+            
+            
+        </LinearLayout>
+    </ScrollView>
+</layout>
+            

@@ -1,0 +1,150 @@
+{
+  "inputVersion": "0.1",
+  "projectConfig": {
+    "projectName": "genny",
+    "root": "./modules/",
+    "buildSystemConfig": {
+      "buildSystemVersion": "6.8.1",
+      "agpVersion": "4.1.2",
+      "kotlinVersion": "1.4.30",
+      "generateBazelFiles": false
+    },
+    "moduleConfigs": [
+      {
+        "kotlin": {
+          "packages": "10",
+          "classesPerPackage": "10",
+          "methodsPerClass": "10",
+          "fieldsPerClass": "3"
+        },
+        "useKotlin": true,
+        "moduleName": "pureModule2"
+      },
+      {
+        "kotlin": {
+          "packages": "10",
+          "classesPerPackage": "10",
+          "methodsPerClass": "10"
+        },
+        "useKotlin": true,
+        "moduleName": "pureModule",
+        "dependencies": [
+          {
+            "moduleName": "pureModule2",
+            "method": "api"
+          },
+          {
+            "library": "org.mockito:mockito-inline:2.15.0",
+            "method": "testCompile"
+          }
+        ]
+      },
+      {
+        "moduleType": "android",
+        "androidBuildConfig": {
+          "minSdkVersion": 20,
+          "targetSdkVersion": 27,
+          "compileSdkVersion": 27
+        },
+        "kotlin": {
+          "packages": "10",
+          "classesPerPackage": "10",
+          "methodsPerClass": "10",
+          "complexity": {
+            "lambdaCount": 3
+          }
+        },
+        "useKotlin": true,
+        "moduleName": "applicationModule",
+        "activityCount": 5,
+        "hasLaunchActivity": true,
+        "resourcesConfig": {
+          "stringCount": 5,
+          "imageCount": 5,
+          "layoutCount": 5
+        },
+        "dataBindingConfig": {
+          "listenerCount": 10
+        },
+        "dependencies": [
+          {
+            "moduleName": "pureModule"
+          },
+          {
+            "moduleName": "libraryModule1",
+            "method": "api"
+          },
+          {
+            "moduleName": "libraryModule2",
+            "method": "api"
+          },
+          {
+            "library": "org.mockito:mockito-inline:2.15.0",
+            "method": "testCompile"
+          }
+        ]
+      },
+      {
+        "moduleType": "android",
+        "kotlin": {
+          "packages": "10",
+          "classesPerPackage": "10",
+          "methodsPerClass": "10"
+        },
+        "useKotlin": true,
+        "moduleName": "libraryModule1",
+        "activityCount": 5,
+        "resourcesConfig": {
+          "stringCount": 5,
+          "imageCount": 5,
+          "layoutCount": 5
+        },
+        "dependencies": [
+          {
+            "moduleName": "pureModule"
+          }
+        ],
+        "flavors": [
+          {
+            "name": "red",
+            "dimension": "color",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "moduleType": "android",
+        "kotlin": {
+          "packages": "10",
+          "classesPerPackage": "10",
+          "methodsPerClass": "10"
+        },
+        "useKotlin": true,
+        "moduleName": "libraryModule2",
+        "activityCount": 5,
+        "resourcesConfig": {
+          "stringCount": 5,
+          "imageCount": 5,
+          "layoutCount": 5
+        },
+        "dependencies": [
+          {
+            "moduleName": "pureModule"
+          }
+        ],
+        "flavors": [
+          {
+            "name": "red",
+            "dimension": "color",
+            "count": 2
+          }
+        ]
+      }
+    ],
+    "repositories": [
+      {
+        "url": "https://oss.sonatype.org/content/repositories/snapshots"
+      }
+    ]
+  }
+}
