@@ -12,7 +12,7 @@ pluginManagement {
 
     repositories {
         google()
-        jcenter()
+        mavenCentral()
     }
 
     resolutionStrategy {
@@ -32,6 +32,6 @@ dependencyResolutionManagement {
 
     repositories {
         google()
-        jcenter()
+        mavenCentral()
     }
 }
