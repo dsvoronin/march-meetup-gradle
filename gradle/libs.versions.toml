@@ -1,0 +1,8 @@
+[versions]
+kotlin = "1.4.30"
+
+[libraries]
+kotlinGradle = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+kotlinStdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin" }
+androidGradle = "com.android.tools.build:gradle:4.1.2"
+junit4 = "junit:junit:4.12"

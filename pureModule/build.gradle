@@ -4,9 +4,8 @@ plugins {
 
 dependencies {
     api project(':pureModule2')
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.4.30"
-    testImplementation "org.mockito:mockito-inline:2.15.0"
-    testImplementation "junit:junit:4.12"
+    implementation(libs.kotlinStdlib)
+    testImplementation(libs.junit4)
 }
 
 sourceCompatibility = "1.8"
