@@ -1,5 +1,6 @@
 plugins {
     id("android-application-convention")
+    id("dependency-locking-convention")
 }
 
 android {
