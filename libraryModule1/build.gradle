@@ -5,6 +5,8 @@ plugins {
 dependencies {
     implementation project(':pureModule')
     implementation(libs.kotlinStdlib)
+
+    // [THE ISSUE]
     implementation(libs.rxJava)
     implementation(libs.junit4)
 }

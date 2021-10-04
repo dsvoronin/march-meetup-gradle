@@ -6,4 +6,9 @@ kotlinGradle = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.r
 kotlinStdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin" }
 androidGradle = "com.android.tools.build:gradle:4.1.2"
 junit4 = "junit:junit:4.12"
-rxJava = "io.reactivex.rxjava3:rxjava:3.0.13"
+
+## [THE ISSUE]
+## This is a part of dependency lock
+#rxJava = "io.reactivex.rxjava3:rxjava:3.0.13"
+## Updating version, i expecting a failed build, but it's implicitly downgrades to locked version
+rxJava = "io.reactivex.rxjava3:rxjava:3.1.1"
