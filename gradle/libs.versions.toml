@@ -6,3 +6,4 @@ kotlinGradle = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.r
 kotlinStdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin" }
 androidGradle = "com.android.tools.build:gradle:4.1.2"
 junit4 = "junit:junit:4.12"
+rxJava = "io.reactivex.rxjava3:rxjava:3.0.13"
