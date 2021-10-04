@@ -5,7 +5,7 @@ configure<BaseExtension> {
     setCompileSdkVersion(27)
     defaultConfig {
 
-        setMinSdkVersion(19)
+        setMinSdkVersion(21)
         setTargetSdkVersion(27)
         versionCode = 1
         versionName = "1.0"
