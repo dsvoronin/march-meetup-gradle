@@ -2,14 +2,13 @@ import com.android.build.gradle.BaseExtension
 
 configure<BaseExtension> {
 
-    setCompileSdkVersion(27)
+    setCompileSdkVersion(30)
     defaultConfig {
 
         setMinSdkVersion(21)
-        setTargetSdkVersion(27)
+        setTargetSdkVersion(30)
         versionCode = 1
         versionName = "1.0"
-        multiDexEnabled = true
         testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {

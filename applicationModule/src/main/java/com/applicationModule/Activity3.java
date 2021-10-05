@@ -10,7 +10,7 @@ public class Activity3 extends android.app.Activity {
   public void onCreate(android.os.Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     new applicationModulepackageKt0.Foo0().foo9();
-    com.applicationModule.databinding.ApplicationmoduleactivityMain3Binding binding = android.databinding.DataBindingUtil.setContentView(this, R.layout.applicationmoduleactivity_main3);
+    com.applicationModule.databinding.ApplicationmoduleactivityMain3Binding binding = androidx.databinding.DataBindingUtil.setContentView(this, R.layout.applicationmoduleactivity_main3);
     binding.setFoo3(new applicationModulepackageKt0.Foo3());
   }
 }

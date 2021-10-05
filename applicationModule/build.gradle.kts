@@ -5,16 +5,16 @@ plugins {
 
 android {
     defaultConfig {
-        applicationId "com.applicationModule"
+        applicationId = "com.applicationModule"
     }
     dataBinding {
-        enabled = true
+        isEnabled = true
     }
 }
 
 dependencies {
-    api project(':libraryModule2')
-    api project(':libraryModule1')
-    implementation project(':pureModule')
+    api(project(":libraryModule2"))
+    api(project(":libraryModule1"))
+    implementation(project(":pureModule"))
     testImplementation(libs.junit4)
 }
